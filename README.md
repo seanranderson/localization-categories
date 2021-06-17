@@ -1,2 +1,6 @@
 # localization-categories
 Sound source localization analysis code (unsupervised learning with stochastic prototypes)
+
+This code was developed to analyze sound source localization data from perceptual experiments. In these experiments, listeners guess the location of a sound in a semi-circle around the head, and the results can be summarized in terms of the angle (between -90 and +90) where the sound was presented and the angle where the listener perceived the sound. The software takes the results from these experiments (function relating angle of target and perceived sound) and sorts them into one of twenty pre-defined categories. It is intended to be modified to fit the specific analysis needs of the user.
+
+The manuscript associated with this code is being submitted for consideration of publication at PLOS ONE. If it is published, example code will be included in a supplementary appendix for greater context.
