@@ -1,3 +1,10 @@
+# This R script is written to simulate localization data according to 
+# parameters defined by the user. The 'SimClustering.R' can then be 
+# to analyze the output and sort data into a given number of clusters.
+# 
+# Sean R. Anderson - sean.hearing@gmail.com
+
+# Clear existing workspace
 rm(list=ls())
 library(truncnorm)
 
