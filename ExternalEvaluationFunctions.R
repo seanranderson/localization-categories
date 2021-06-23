@@ -1,3 +1,9 @@
+# This R script provides functions to perform external evaluation of 
+# clustering performance in the simulation study completed within 
+# 'SimClustering.R'.
+# 
+# Sean R. Anderson - sean.hearing@gmail.com
+
 randSimilarity <- function(y,yprime,vectorized=T){
   # y is defined groups
   # yprime is algorithmic clustering
