@@ -2,8 +2,8 @@
 # manuscript associated with this repository. The code can be modified 
 # to test different parameterizations of categories if desired. For 
 # an example dataset, see [file to be uploaded following IRB approval].
-# This script requires functions defined in 'HelperFunctions.R' to be 
-# in the workspace.
+# This script requires functions defined in 'HelperFunctions.R' and 
+# 'LocalizationCategoryDefinitions.R' to be in the workspace.
 # 
 # Sean R. Anderson - sean.hearing@gmail.com
 
