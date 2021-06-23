@@ -1,8 +1,8 @@
 # This R script is written to replicate the simulation study included in 
 # the manuscript associated with this repository. It can be modified to 
 # test additional parameterizations of localization categories or 
-# data. This script requires functions defined in 'HelperFunctions.R' to 
-# be in the workspace.
+# data. This script requires functions defined in 'HelperFunctions.R' and 
+# 'LocalizationCategoryDefinitions.R' to be in the workspace.
 # 
 # Sean R. Anderson - sean.hearing@gmail.com
 
