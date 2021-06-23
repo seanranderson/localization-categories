@@ -1,5 +1,14 @@
+# This R script is written to complete a simulation study using simulations 
+# of localization functions output and saved as a .RData file from the 
+# 'LocSimulations.R' script in this repository.
+# 
+# Sean R. Anderson - sean.hearing@gmail.com
+
+# Clear existing workspace
 rm(list=ls())
-load('LocSimulationData_10per.RData')
+# Add desired filename of data simulated LocSimulations.R
+load('LocSimulationData_10per.RData') 
+# Assign random number table in R
 set.seed(185)
 
 # Functions
