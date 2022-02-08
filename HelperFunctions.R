@@ -4,6 +4,35 @@
 # 
 # Sean R. Anderson - sean.hearing@gmail.com
 
+# Function to simulate localization data from predefined function
+simLoc <- function(angle, rmeans, rsds, n, lsiz){
+  library(truncnorm)
+  # Input:
+  # angle - vector of target angles
+  # rmeans - vector of response means at each target angle
+  # rsds - vector of response SDs at each target angle
+  # n - number of responses per target speaker
+  # lsiz - number of simulated subjects per category
+  # also indicates size as output list
+  
+  # Output: data frame of means and SDs at each target angle
+  
+  # Generate data from truncated normal distribution
+  x <- as.data.frame( mapply( rtruncnorm,
+                              mean = rmeans, 
+                              sd = rsds,
+                              n = n*lsiz,
+                              a = -90, b = 90))
+  
+  # Name each column according to mean
+  names(x) <- as.character(angle)
+  
+  # Split data into lists
+  f <- sort( rep( seq(1,lsiz), n))
+  l <- split(x,f)
+  return(l)
+}
+
 # Second lapply function
   # Allows for lapply over lapply
   # Built for and tested with data frames
