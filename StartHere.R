@@ -14,6 +14,8 @@ raw.dat <- read.csv('S3_Dataset.csv',head=T)
 
 # Load in dependencies
 library(reshape2)
+library(MASS)
+library(cluster)
 
 # Aggregate data by mean and SD
 agg.mn <- aggregate(RespAz ~ SubID + TargAz, 
