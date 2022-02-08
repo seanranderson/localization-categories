@@ -14,9 +14,6 @@ now <- Sys.time()
 # subject in experimental data
 nrep <- 50
 
-# Subject IDs in dataset
-SubIDs <- unique( raw.dat$subject)
-
 # Assigns categories from Fig. S.2, defined in simLocData, 
 # to subjects based on their response means and SDs at 
 # each target angle. Category assignment is based on the 
@@ -130,14 +127,19 @@ ls <- classAssignment(dat, nrep, 50)
 # Show example rows from output summary
 head(ls[[1]])
 
+# Get subject IDs from dataset
+SubIDs <- unique(raw.dat$SubID)
+
 # Write summary CSV file
+  # Rows are subjects
+  # Columns are repetitions (determined by `nrep`)
 write.csv( t( setNames( as.data.frame( matrix( unlist( lapply(
   ls[[2]], function(x) {x$class})), 48, 50),
     # Subject
     row.names = as.character( SubIDs)), 
   # Rep number
   as.character(1:nrep))),
-  file = 'confusionsBySub.csv', col.names = T, row.names = T)
+  file = 'confusionsBySub.csv', row.names = T)
 
 # Print runtime for code chunk
 difftime(Sys.time(),now)
