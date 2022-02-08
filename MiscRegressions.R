@@ -5,7 +5,7 @@
 # of the original manuscript, except that the data frame is 
 # renamed `reg.dat` in this version. To obtain the data used 
 # here, please see the manuscript with which the data were 
-# published at doi: xx
+# published at: https://doi.org/10.1371/journal.pone.0263516
 # 
 # Sean R. Anderson - sean.hearing@gmail.com
 
@@ -23,8 +23,8 @@ library(lmerTest)
 set.seed(5219)
 
 # Read in the dataset
-reg.dat <- read.csv('S1_Dataset.csv',head=T)
-dat.by.targ <- read.csv('S2_Dataset.csv',head=T)
+reg.dat <- read.csv('pone.0263516.s004.csv',head=T)
+dat.by.targ <- read.csv('pone.0263516.s005.csv',head=T)
 
 # Regression analysis in Root-mean-square error section
   # Associated with Fig 4A
