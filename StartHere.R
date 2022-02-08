@@ -8,9 +8,9 @@
 # Sean R. Anderson - sean.hearing@gmail.com
 
 # Dataset from accompanying open-access publication supporting files
-  # doi: xx
+  # https://doi.org/10.1371/journal.pone.0263516
   # Took approximately 1 hour to complete author's laptop computer
-raw.dat <- read.csv('S3_Dataset.csv',head=T)
+raw.dat <- read.csv('pone.0263516.s006.csv',head=T)
 
 # Load in dependencies
 #   Note: If you do not currently have these libraries installed 
