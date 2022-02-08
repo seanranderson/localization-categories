@@ -13,6 +13,10 @@
 raw.dat <- read.csv('S3_Dataset.csv',head=T)
 
 # Load in dependencies
+#   Note: If you do not currently have these libraries installed 
+#   in R, you will first need to manually enter 
+#   `install.packages('PackageName')`, replacing PackageName with
+#   the name of each library below.
 library(reshape2)
 library(MASS)
 library(cluster)
