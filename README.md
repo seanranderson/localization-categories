@@ -5,4 +5,4 @@ This code was developed to analyze sound source localization data from perceptua
 
 Definitions of categories are given in `LocalizationCategoryDefinitions.R`. This code should be modified by the user to change parameters for categories, and add or remove categories. Functions from `LocalizationCategoryDefinitions.R` and `HelperFunctions.R` need to be input to the user workspace in R before other scripts will work properly.
 
-The manuscript associated with this code is being submitted for consideration of publication at PLOS ONE. If it is published, example code will be included in a supplementary appendix for greater context.
+The manuscript associated with this code had been published in PLOS ONE at https://doi.org/10.1371/journal.pone.0263516 where the data are also available.
