@@ -17,9 +17,7 @@
 
 # Prepare workspace
 rm(list=ls())
-library(lattice)
 library(car)
-library(MASS)
 library(lme4)
 library(lmerTest)
 set.seed(5219)
